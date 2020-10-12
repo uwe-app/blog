@@ -1,0 +1,223 @@
+@import url("./theme.css");
+@import url("./fonts.css");
+
+:root {
+  --default-font: "Merriweather", serif;
+  --mono-font: Monaco, Menlo, Consolas, Courier New, monospace;
+  --rhythm: 1.8rem;
+}
+
+/* DARK */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: var(--default-font);
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  line-height: 1.8;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1, h2, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+h3 {
+  font-weight: normal;
+  line-height: 1.6;
+  font-size: 2.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+h4, h5, h6 {
+  font-size: 1.8rem;
+}
+
+h2 + p {
+  margin-top: 0;
+}
+
+li h4 + p {
+  margin: 0;
+}
+
+li h4 + p + small {
+  display: block;
+  margin-bottom: var(--rhythm);
+}
+
+header h1,
+header h1 a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.4rem;
+  vertical-align: top;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+header > nav {
+  display: flex;
+}
+
+header > nav > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+main {
+  /*max-width: 1080px;*/
+}
+
+:not(pre) code {
+  padding: 2px 5px;
+  font-size: 1.5rem;
+  background: #efefef;
+}
+
+pre {
+  font-size: 1.4rem;
+}
+
+pre > code {
+  padding: 1rem;
+  border-radius: 4px;
+  display: block;
+  line-height: 1.4;
+}
+
+pre, code {
+  font-family: var(--mono-font);
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li > a:first-child + p {
+  margin-top: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 3rem 0;
+  background: #eee;
+}
+
+.rhythm {
+  margin-bottom: var(--rhythm);
+}
+
+ul.tags, ul.tags li {
+  display: inline-block;
+}
+
+ul.tags li:not(:last-child):after {
+  content: ',';
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+div.paginate {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--rhythm);
+}
+div.paginate > a:first-child {
+  margin-right: 2rem;
+}
+
+div.paginate > a:last-child {
+  margin-left: 2rem;
+}
+
+ol.pages {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+ol.pages li {
+  display: inline-block;
+  flex-shrink: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /*border: 1px solid black;*/
+}
+
+ol.pages li.current {
+  align-self: center;
+  background: black;
+  color: white;
+  padding: 0 6px;
+}
+
+/*
+ol.pages li.preserve {
+  background: green;
+}
+*/
+
+/*ol.pages li:not(.current):not(.preserve) {*/
+  /*flex-shrink: 1;*/
+  /*min-width: 0;*/
+/*}*/
+
+ol.pages li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.hidden {
+  display: none;
+}

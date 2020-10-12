@@ -1,0 +1,186 @@
+lang = "en"
+host = "blog.uwe.app"
+
+[styles]
+main = ["/assets/css/style.css"]
+
+#[scripts]
+#main = ["/assets/js/main.js"]
+
+[[scripts.main]]
+type = "module"
+src = "/assets/js/main.js"
+
+[dependencies]
+#"std::core" = { path = "../../plugins/std/core", version = "~1" }
+#"std::feed" = { path = "../../plugins/std/feed", version = "~1" }
+"std::core" = { version = "~1" }
+"std::feed" = { version = "~1" }
+
+[dependencies."std::search"]
+#path = "../../plugins/std/search"
+version = "~1"
+apply = { styles = [ "/**/**" ] }
+
+#[[scripts.main]]
+#src = "/assets/js/main-nomodule.js"
+#nomodule = true
+
+[build]
+rewrite-index = true
+extend = ["html"]
+#tls = false
+#parallel = false
+
+[page]
+description = "UWE blog"
+keywords = "News, Insights, Web Editor, Static, Website, Generator, Headless CMS"
+byline = ["tmpfs"]
+
+#[page.menu.bundles]
+#pages = [
+  #"/posts/bundles-introduction/",
+  #"/posts/bundles-launch/",
+  #"/posts/bundles-archives-sharing/",
+#]
+
+[build.sitemap]
+#entries = 10
+
+#[build.robots."*"]
+#allow = ["*"]
+
+#[build.robots."googlebot"]
+#allow = ["/"]
+#disallow = ["/posts"]
+
+#[feed.templates]
+#atom = "feed/atom.xml"
+
+[feed.posts]
+title = "Blog Posts"
+description = "News and articles about the Universal Web Editor"
+favicon = "/assets/favicon.png"
+target = "posts"
+includes = ["/posts/**"]
+excludes = ["/posts/[0-9]*/", "/posts/"]
+
+[syntax]
+enabled = true
+inline = true
+
+[transform.html]
+strip-comments = true
+toc = true
+words = true
+
+[search.posts]
+index = "/assets/search.idx"
+results = 10
+includes = ["/posts/**"]
+excludes = ["/posts/[0-9]*/"]
+
+#[livereload]
+#notify = false
+
+[minify.html]
+profiles = ["debug", "release"]
+
+[db.load.posts]
+type = "toml"
+provider = "pages"
+from = "posts"
+
+[db.load.posts.on.all]
+key = "*"
+filters = {listing = false}
+
+[db.load.posts.on.tags]
+key = "meta.tags"
+
+[db.load.posts.on.folders]
+key = "meta.folders"
+
+[redirect]
+"/posts/" = "/posts/1/"
+
+[pages."index.md".query]
+name = "posts"
+index = "all"
+include-docs = true
+sort = "created"
+desc = true
+limit = 2
+
+[pages."posts/index.md".query]
+name = "posts"
+index = "all"
+include-docs = true
+page = {size = 5}
+sort = "created"
+desc = true
+
+[pages."tags/index.md".query]
+name = "posts"
+index = "tags"
+include-docs = true
+group = {path = "meta.tags", expand = true}
+
+[pages."tags/item.md"]
+title = "Tag"
+
+[pages."tags/item.md".query]
+name = "posts"
+index = "tags"
+each = true
+include-docs = true
+group = {path = "meta.tags", expand = true}
+
+[pages."folders/index.md".query]
+name = "posts"
+index = "folders"
+include-docs = true
+group = {path = "meta.folders", expand = true}
+
+[pages."folders/item.md".query]
+name = "posts"
+index = "folders"
+each = true
+include-docs = true
+group = {path = "meta.folders", expand = true}
+
+[pages."404.html"]
+standalone = true
+rewrite-index = false
+
+[link]
+catalog = "links.md"
+
+[authors.tmpfs]
+name = "Muji"
+url = "https://tmpfs.org"
+
+[authors.chrism]
+name = "Chris"
+url = "https://chrism.blog"
+
+#[hook.readme]
+#path = "cp"
+#args = ["-f", "build/readme/README.md", "."]
+#after = true
+#profiles = ["readme"]
+
+#[profile.readme]
+#source = "readme"
+#rewrite-index = false
+#use-layout = false
+#paths = ["README.md"]
+#types = {md = {}}
+#collate = false
+
+[publish.aws]
+region = "ap-southeast-1"
+credentials = "tmpfs"
+
+[publish.aws.environments.production]
+bucket = "blog.uwe.app"
