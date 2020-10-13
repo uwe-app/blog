@@ -149,10 +149,6 @@ each = true
 include-docs = true
 group = {path = "meta.folders", expand = true}
 
-[pages."404.html"]
-standalone = true
-rewrite-index = false
-
 [link]
 catalog = "links.md"
 
