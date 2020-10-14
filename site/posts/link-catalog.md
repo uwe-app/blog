@@ -2,7 +2,7 @@
 description = "All your link belong to us"
 created = 2020-07-11
 
-[meta]
+[taxonomies]
 tags = ["Link", "Markdown"]
 +++
 

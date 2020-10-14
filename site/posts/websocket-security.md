@@ -2,7 +2,7 @@
 description = "Mitigations for local websocket server attacks"
 created = 2020-07-01
 
-[meta]
+[taxonomies]
 tags = ["Security", "Websocket"]
 +++
 

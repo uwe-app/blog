@@ -3,7 +3,7 @@ description = "Working with dates and times"
 created = 2020-07-10
 draft = true
 
-[meta]
+[taxonomies]
 tags = ["Date", "Time", "UTC"]
 +++
 

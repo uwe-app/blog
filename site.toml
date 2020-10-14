@@ -96,10 +96,10 @@ key = "*"
 filters = {listing = false}
 
 [db.load.posts.on.tags]
-key = "meta.tags"
+key = "taxonomies.tags"
 
 [db.load.posts.on.folders]
-key = "meta.folders"
+key = "taxonomies.folders"
 
 [redirect]
 "/posts/" = "/posts/1/"
@@ -124,7 +124,7 @@ desc = true
 name = "posts"
 index = "tags"
 include-docs = true
-group = {path = "meta.tags", expand = true}
+group = {path = "taxonomies.tags", expand = true}
 
 [pages."tags/item.md"]
 title = "Tag"
@@ -134,20 +134,20 @@ name = "posts"
 index = "tags"
 each = true
 include-docs = true
-group = {path = "meta.tags", expand = true}
+group = {path = "taxonomies.tags", expand = true}
 
 [pages."folders/index.md".query]
 name = "posts"
 index = "folders"
 include-docs = true
-group = {path = "meta.folders", expand = true}
+group = {path = "taxonomies.folders", expand = true}
 
 [pages."folders/item.md".query]
 name = "posts"
 index = "folders"
 each = true
 include-docs = true
-group = {path = "meta.folders", expand = true}
+group = {path = "taxonomies.folders", expand = true}
 
 [link]
 catalog = "links.md"

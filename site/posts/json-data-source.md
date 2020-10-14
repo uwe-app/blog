@@ -3,7 +3,7 @@ description = "Using JSON documents as a data source"
 created = 2020-07-10
 draft = true
 
-[meta]
+[taxonomies]
 tags = ["JSON", "Data Source"]
 folders = ["Case Study"]
 +++

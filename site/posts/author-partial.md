@@ -3,7 +3,7 @@ description = "Author partial and mentions"
 created = 2020-07-09
 draft = true
 
-[meta]
+[taxonomies]
 tags = ["Author", "Partial", "Mention"]
 +++
 
