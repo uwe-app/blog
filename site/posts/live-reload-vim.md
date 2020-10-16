@@ -1,7 +1,7 @@
 +++
 title = "Live Reload and VIM"
-description = "Configure VIM for live reload"
 created = 2020-07-03
+description = "Configure VIM for live reload"
 +++
 
 ## {{title}}

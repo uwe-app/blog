@@ -1,7 +1,7 @@
 +++
-description = "Managing whitespace with minified HTML documents"
 created = 2020-07-12
 permalink = "/posts/html-minify"
+description = "Managing whitespace with minified HTML documents"
 
 [taxonomies]
 tags = ["HTML", "Minify", "Whitespace"]

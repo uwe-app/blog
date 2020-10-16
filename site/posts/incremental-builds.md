@@ -1,6 +1,6 @@
 +++
-description = "Insights into how the incremental builds work"
 created = 2020-07-06
+description = "Insights into how the incremental builds work"
 +++
 
 ## {{title}}

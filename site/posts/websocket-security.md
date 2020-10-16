@@ -1,6 +1,6 @@
 +++
-description = "Mitigations for local websocket server attacks"
 created = 2020-07-01
+description = "Mitigations for local websocket server attacks"
 
 [taxonomies]
 tags = ["Security", "Websocket"]

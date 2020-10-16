@@ -2,7 +2,6 @@
 <html lang="{{lang}}">
   <head>
     {{> head}}
-    {{author}}
     {{favicon}}
     {{bookmark}}
     {{feed name="posts"}}
@@ -10,11 +9,8 @@
   </head>
   <body>
     {{> header}}
-    {{search id="posts" placeholder="Enter keywords, eg: minify" class="search-wrapper hidden"}}
     <main>{{partial}}</main>
     {{> footer}}
-    {{search id="posts" script=true}}
     {{scripts}}
-    {{livereload}}
   </body>
 </html>
