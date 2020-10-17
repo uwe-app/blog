@@ -63,6 +63,14 @@ Which will render the same markup:
 {{> cite author="tmpfs"~}}
 ```
 
+Sometimes we like to refer to people by their alias, in which case you can use the `at` flag:
+
+```handlebars
+\{{> cite author="tmpfs" at=true~}}
+```
+
+Which will render an inline link using the author's alias prefixed by `@`, for example: {{> cite author="tmpfs" at=true ~}}.
+
 {{> back}}
 
 ---
