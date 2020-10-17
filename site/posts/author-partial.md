@@ -7,44 +7,60 @@ description = "Author partial and mentions"
 tags = ["Author", "Partial", "Mention"]
 +++
 
-## {{title}}
+# {{title}}
 
 {{> words}}
 
-We added [author settings][] so that they can easily be referred to using a `byline` in the front matter:
+We designed [author attribution][] so that pages can easily reference `authors` by alias in the front matter like this:
 
 ```toml
-byline = ["tmpfs"]
+authors = ["tmpfs"]
 ```
 
-Which prevents repetition when assigning authors to pages; the page templates have access to an `authors` list propagated via the identifiers in the `byline` which means we can create a useful partial to include all the authors in the byline at the bottom of each blog post:
+And some useful partials are supplied by the [std::author](https://github.com/uwe-app/plugins/tree/master/std/author) plugin; this article describes the various ways of using the author partials.
+
+---
+
+## Attribution
+
+When we want to attribute the authors of a page for the byline of a blog post or article, we can render the `attribution` partial:
 
 ```handlebars
-{{{{raw}}}}
-{{#each authors}}
-<a href="{{this.link}}">{{this.name}}</a>{{#unless @last}}, {{/unless}}{{/each}}{{{{/raw}}}}
+\{{> attribution~}}
 ```
 
-But what about if we want to reference an author using the identifier?
+Renders to:
 
-Luckily, the settings are exposed to our templates via `authors` so we can just look up an author in the map. First let's check we can access the map correctly:
+```html
+{{> attribution~}}
+```
+
+You can see an example of this in [our blog byline partial](https://github.com/uwe-app/blog/blob/site/site/partials/byline.hbs).
+
+## Mention & Cite
+
+If we want to link to an author's website we can use the `mention` partial with the context of a specific author like this:
 
 ```handlebars
-{{{{raw}}}}
-{{json authors}}{{{{/raw}}}}
+{{{{raw}}}}{{#with authors.all.tmpfs}}{{> mention~}}{{/with~}}{{{{/raw}}}}
 ```
 
-Which yields:
+Which will render the markup for the link like this:
 
-```json
-{{json authors}}
+```html
+{{#with authors.all.tmpfs}}{{> mention~}}{{/with~}}
 ```
 
-We can now refer to an author easily but we like short and sweet so let's create a partial to do the lookup for us:
-
-{{>cite id="tmpfs"}}
+But that is a bit long so we added the `cite` partial to make it more compact:
 
 ```handlebars
+\{{> cite author="tmpfs"~}}
+```
+
+Which will render the same markup:
+
+```html
+{{> cite author="tmpfs"~}}
 ```
 
 {{> back}}
@@ -53,4 +69,4 @@ We can now refer to an author easily but we like short and sweet so let's create
 
 {{> byline}}
 
-[author settings]: https://uwe.app/docs/settings/authors/
+[author attribution]: https://uwe.app/docs/content/author-attribution/
