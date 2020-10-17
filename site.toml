@@ -16,6 +16,8 @@ src = "/assets/js/main.js"
 #"std::feed" = { path = "../../plugins/std/feed", version = "~1" }
 #"std::core" = { version = "~1" }
 "std::core" = { path = "../../plugins/std/core", version = "~1" }
+"std::author" = { path = "../../plugins/std/author", version = "~1" }
+#"std::author" = { version = "~1" }
 "std::feed" = { version = "~1" }
 
 [dependencies."std::search"]
@@ -36,7 +38,7 @@ extend = ["html"]
 [page]
 description = "UWE blog"
 keywords = "News, Insights, Web Editor, Static, Website, Generator, Headless CMS"
-byline = ["tmpfs"]
+authors = ["tmpfs"]
 
 #[page.menu.bundles]
 #pages = [
