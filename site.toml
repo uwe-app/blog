@@ -2,7 +2,7 @@ lang = "en"
 host = "blog.uwe.app"
 
 [styles]
-main = ["/assets/css/style.css"]
+main = ["/assets/styles/main.css"]
 
 #[scripts]
 #main = ["/assets/js/main.js"]
