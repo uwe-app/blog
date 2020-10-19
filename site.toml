@@ -9,7 +9,7 @@ main = ["/assets/styles/main.css"]
 
 [[scripts.main]]
 type = "module"
-src = "/assets/js/main.js"
+src = "/assets/scripts/main.js"
 
 [dependencies]
 #"std::core" = { path = "../../plugins/std/core", version = "~1" }
