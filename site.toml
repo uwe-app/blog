@@ -1,12 +1,6 @@
 lang = "en"
 host = "blog.uwe.app"
 
-[styles]
-main = ["/assets/styles/main.css"]
-
-#[scripts]
-#main = ["/assets/js/main.js"]
-
 [[scripts.main]]
 type = "module"
 src = "/assets/scripts/main.js"
@@ -15,7 +9,7 @@ src = "/assets/scripts/main.js"
 #"std::core" = { path = "../../plugins/std/core", version = "~1" }
 #"std::feed" = { path = "../../plugins/std/feed", version = "~1" }
 #"std::core" = { version = "~1" }
-"std::core" = { path = "../../plugins/std/core", version = "~1" }
+"std::core" = { path = "../../plugins/std/core", version = "~2" }
 "std::author" = { path = "../../plugins/std/author", version = "~1" }
 #"std::author" = { version = "~1" }
 "std::feed" = { version = "~1" }
