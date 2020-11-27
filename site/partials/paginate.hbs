@@ -1,17 +1,17 @@
 {{#with paginate}}
 <div class="paginate">
-{{#with prev}}← <a href="{{link this.href}}">Previous</a>{{/with}}
+{{#with prev}}← <a href="{{link href}}">Previous</a>{{/with}}
 <ol class="pages">
 {{#each links}}
-{{#if (ne this.index ../current)}}
-<li {{#if this.preserve}}class="preserve"{{/if}}>
-  <a href="{{link this.href}}">{{this.name}}</a>
+{{#if (ne @index ../current)}}
+<li {{#if preserve}}class="preserve"{{/if}}>
+  <a href="{{link href}}">{{name}}</a>
 </li>
 {{else}}
-<li class="current">{{this.name}}</li>
+<li class="current">{{name}}</li>
 {{/if}}
 {{/each}}
 </ol>
-{{#with next}}<a href="{{link this.href}}">Next</a> →{{/with}}
+{{#with next}}<a href="{{link href}}">Next</a> →{{/with}}
 </div>
 {{/with}}
