@@ -8,11 +8,15 @@ src = "/assets/scripts/main.js"
 [dependencies]
 #"std::core" = { path = "../../plugins/std/core", version = "~1" }
 #"std::feed" = { path = "../../plugins/std/feed", version = "~1" }
-#"std::core" = { version = "~1" }
-"std::core" = { path = "../../plugins/std/core", version = "~2" }
-"std::author" = { path = "../../plugins/std/author", version = "~1" }
+#"std::core" = { path = "../../plugins/std/core", version = "~4" }
+#"std::author" = { path = "../../plugins/std/author", version = "~1" }
 #"std::author" = { version = "~1" }
-"std::feed" = { path = "../../plugins/std/feed", version = "~2" }
+#"std::feed" = { path = "../../plugins/std/feed", version = "~2" }
+
+"std::core" = { version = "~4" }
+"std::author" = { version = "~1" }
+#"std::author" = { version = "~1" }
+"std::feed" = { version = "~2" }
 
 [dependencies."std::search"]
 #path = "../../plugins/std/search"
