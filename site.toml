@@ -13,9 +13,8 @@ src = "/assets/scripts/main.js"
 #"std::author" = { version = "~1" }
 #"std::feed" = { path = "../../plugins/std/feed", version = "~2" }
 
-"std::core" = { version = "~4" }
+"std::core" = { version = "~4.1.3" }
 "std::author" = { version = "~1" }
-#"std::author" = { version = "~1" }
 "std::feed" = { version = "~2" }
 
 [dependencies."std::search"]
