@@ -8,14 +8,8 @@ tags = ["JSON", "Data Source"]
 folders = ["Case Study"]
 +++
 
-## {{title}}
-
-{{> words}}
+{{import "header"}}
 
 Lorem ipsum...
 
-{{> back}}
-
----
-
-{{> byline}}
+{{import "footer"}}

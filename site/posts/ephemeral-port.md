@@ -3,9 +3,7 @@ created = 2020-07-07
 description = "Use an ephemeral port for multiple projects"
 +++
 
-## {{title}}
-
-{{> words}}
+{{import "header"}}
 
 The use of ephemeral ports is very helpful when working with local development servers.
 
@@ -25,9 +23,4 @@ ht run build/release --port=0
 
 The operating system will allocate the web server a free port when it attempts to bind and our code will operate on the actual socket address that was used.
 
-{{> back}}
-
----
-
-{{> byline}}
-
+{{import "footer"}}

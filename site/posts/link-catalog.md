@@ -6,9 +6,7 @@ description = "All your link belong to us"
 tags = ["Link", "Markdown"]
 +++
 
-## {{title}}
-
-{{> words}}
+{{import "header"}}
 
 We like using link references at the end of a markdown document to save repetition when using the same link multiple times but they do not span multiple documents. A link catalog allows us to use a single location for link references which makes managing links much easier and helps to prevent duplication.
 
@@ -35,8 +33,4 @@ That's it, now you can use link references in any markdown document like usual:
 News about the [UWE project][uwe].
 ```
 
-{{> back}}
-
----
-
-{{> byline}}
+{{import "footer"}}

@@ -7,9 +7,7 @@ description = "Author partial and mentions"
 tags = ["Author", "Partial", "Mention"]
 +++
 
-# {{title}}
-
-{{> words}}
+{{import "header"}}
 
 We designed [author attribution][] so that pages can easily reference `authors` by alias in the front matter like this:
 
@@ -71,10 +69,6 @@ Sometimes we like to refer to people by their alias, in which case you can use t
 
 Which will render an inline link using the author's alias prefixed by `@`, for example: {{> cite author="tmpfs" at=true ~}}.
 
-{{> back}}
-
----
-
-{{> byline}}
+{{import "footer"}}
 
 [author attribution]: https://uwe.app/docs/content/author-attribution/

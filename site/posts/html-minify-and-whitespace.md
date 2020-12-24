@@ -7,9 +7,7 @@ description = "Managing whitespace with minified HTML documents"
 tags = ["HTML", "Minify", "Whitespace"]
 +++
 
-## {{title}}
-
-{{> words}}
+{{import "header"}}
 
 Having minified HTML is good to keep file sizes as small as possible but is also important for the diff logic used when publishing. Without minification insignificant whitespace changes to a page would re-publish the file which can invalidate all the pages if whitespace in the layout changes!
 
@@ -45,10 +43,6 @@ profiles = ["debug", "release"]
 
 Now we can stop [fighting the space betweeen inline block elements][fighting-the-space]!
 
-{{> back}}
-
----
-
-{{> byline}}
+{{import "footer"}}
 
 [fighting-the-space]: https://css-tricks.com/fighting-the-space-between-inline-block-elements/

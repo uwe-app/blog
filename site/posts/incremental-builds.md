@@ -3,9 +3,7 @@ created = 2020-07-06
 description = "Insights into how the incremental builds work"
 +++
 
-## {{title}}
-
-{{> words}}
+{{import "header"}}
 
 If source files have not changed there is no need for us to render or copy them; a manifest is created for each [release tag]({{ link "https://uwe.app/docs/release-tags/" }}) which is written to the build directory as a JSON file.
 
@@ -33,9 +31,5 @@ If you want to force a full build you can use the `--force` option.
 
 Note that when the `--live` option is given pages *must be compiled* to ensure they connect to the correct websocket server endpoint.
 
-{{> back}}
-
----
-
-{{> byline}}
+{{import "footer"}}
 

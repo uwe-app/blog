@@ -4,9 +4,7 @@ created = 2020-07-03
 description = "Configure VIM for live reload"
 +++
 
-## {{title}}
-
-{{> words}}
+{{import "header"}}
 
 When using live reload (`ht --live`) and the VIM text editor swap files and backups can interfere with the operating system file change notifications.
 

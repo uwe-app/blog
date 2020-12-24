@@ -7,9 +7,7 @@ description = "Working with dates and times"
 tags = ["Date", "Time", "UTC"]
 +++
 
-## {{title}}
-
-{{> words}}
+{{import "header"}}
 
 ```toml
 #created = 1979-05-27T00:32:00.999999-07:00
@@ -18,9 +16,4 @@ tags = ["Date", "Time", "UTC"]
 #created = 1979-05-27
 ```
 
-{{> back}}
-
----
-
-{{> byline}}
-
+{{import "footer"}}

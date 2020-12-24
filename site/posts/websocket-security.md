@@ -6,9 +6,7 @@ description = "Mitigations for local websocket server attacks"
 tags = ["Security", "Websocket"]
 +++
 
-## {{title}}
-
-{{> words}}
+{{import "header"}}
 
 Recent news has shown that some malicious websites are abusing local websocket servers (you can read more [here](https://news.ycombinator.com/item?id=23246170) and [here](https://news.ycombinator.com/item?id=23256458)).
 
@@ -45,10 +43,6 @@ The `u8` type has 256 possible values and we are using 16 or them when we genera
 
 Unless the page was rendered by the `ht` web server there is very little chance of knowing the websocket server endpoint!
 
-{{> back}}
-
----
-
-{{> byline}}
+{{import "footer"}}
 
 [CORS]: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
