@@ -5,13 +5,7 @@
   --default-font: "Merriweather", serif;
   --mono-font: Monaco, Menlo, Consolas, Courier New, monospace;
   --rhythm: 1.8rem;
-}
-
-/* DARK */
-
-@media (prefers-color-scheme: dark) {
-  :root {
-  }
+  --std-max-width: none;
 }
 
 html {
@@ -33,10 +27,11 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
+
 body {
   font-size: 1.8rem;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;*/
   padding: 2rem 2rem;
   line-height: 1.8;
 }
@@ -99,14 +94,13 @@ header > nav > :not(:last-child) {
   margin-right: 1rem;
 }
 
-main {
-  /*max-width: 1080px;*/
-}
+/*main {*/
+  /*max-width: none;*/
+/*}*/
 
 :not(pre) code {
   padding: 2px 5px;
   font-size: 1.5rem;
-  background: #efefef;
 }
 
 pre {

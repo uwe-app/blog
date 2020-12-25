@@ -75,7 +75,7 @@ profiles = ["debug", "release"]
 type = "toml"
 provider = "pages"
 from = "posts"
-exclude = ["index.*"]
+excludes = ["index.*"]
 
 [db.load.posts.on.all]
 key = "*"
