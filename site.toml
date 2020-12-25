@@ -49,6 +49,8 @@ favicon = "/assets/favicon.png"
 target = "posts"
 includes = ["/posts/**"]
 excludes = ["/posts/[0-9]*/", "/posts/"]
+[feed.posts.alternate]
+includes = ["/", "/posts/**/*.html"]
 
 [syntax]
 enabled = true
