@@ -6,6 +6,7 @@ type = "module"
 src = "/assets/scripts/main.js"
 
 [dependencies]
+"std::syntax" = "~1"
 "std::core" = { version = "~4.1.11", apply = {styles = ["**"]} }
 "std::author" = { version = "~1" }
 "std::feed" = { version = "~2" }

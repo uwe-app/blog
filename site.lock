@@ -2,22 +2,28 @@
 name = "std::author"
 version = "1.0.2"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-checksum = "2a7447fab80b8f7d69bd1a5f02ab2156dd5f9dfa364f634db034d6067749e243"
+checksum = "ebe59f0c529a8a21690772ae4cd28b9c386bb3b948a0df10a2a0e7d8b4707293"
 
 [[package]]
 name = "std::core"
-version = "4.1.11"
+version = "4.1.12"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-checksum = "9984aa8da54dd708d1c870818c3c8b9df4892fc3f2f23c0af3683000576851ae"
+checksum = "927cc884bd2fcbc4cb5b11112ce6fb525359b6738f1ca475dc6baec39ff3199b"
 
 [[package]]
-name = "std::feed"
-version = "2.0.0"
+name = "std::syntax"
+version = "1.0.0"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-checksum = "6da008fad5b319adc5d950bbf3431dbf6bb2942de04c54ebd88938b7ba1625c0"
+checksum = "323fcd0611640b1577065c00a89672a16dc541f0920d3e50f289c28e73d66f01"
 
 [[package]]
 name = "std::search"
 version = "1.0.0"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-checksum = "d02b8ce240b685d95e0f36ead7f48edc3b5bd2bdd4db680aacf9f47a130622f8"
+checksum = "38eb06537059e85f32ebd3303ce6b610681855d337c7f5fb93c9ab3039682b9d"
+
+[[package]]
+name = "std::feed"
+version = "2.0.0"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+checksum = "72ecb3d8b1ca61e47126e8bc0722d03a33d834c120c0e2c0a2e3428e9db96512"
