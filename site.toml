@@ -6,10 +6,11 @@ type = "module"
 src = "/assets/scripts/main.js"
 
 [dependencies]
-"std::syntax" = "~1"
+"std::author" = "^1"
+"std::blueprint::blog" = "^1.0.1"
 "std::core" = { version = "~4.1.11", apply = {styles = ["**"]} }
-"std::author" = { version = "~1" }
-"std::feed" = { version = "~2" }
+"std::feed" = "^2"
+"std::syntax" = "^1"
 
 [dependencies."std::search"]
 #path = "../../plugins/std/search"

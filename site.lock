@@ -27,3 +27,27 @@ name = "std::syntax"
 version = "1.0.0"
 checksum = "323fcd0611640b1577065c00a89672a16dc541f0920d3e50f289c28e73d66f01"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::author"
+version = "1.0.2"
+checksum = "af817cee4e373c7f89a1350a2e45f0ade38074b4b2caddc710b11b66fd28fc7f"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::feed"
+version = "2.0.0"
+checksum = "b3bdc05240636609527de1fd82a1c32740751a66c294ac6637289c925fde96e3"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::search"
+version = "1.0.0"
+checksum = "fa1f4200d8fa3fae1a51ffcfd8ea3f4ca3771f60babe4dc1bcda1bbf71df9bb5"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::blueprint::blog"
+version = "1.0.1"
+checksum = "9693ca2835c3e17f3aad79447b3429fea4668c252315fef27fb22842f814a319"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
