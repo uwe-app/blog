@@ -86,8 +86,8 @@ key = "*"
 [db.load.posts.on.tags]
 key = "taxonomies.tags"
 
-[db.load.posts.on.folders]
-key = "taxonomies.folders"
+#[db.load.posts.on.folders]
+#key = "taxonomies.folders"
 
 [redirect]
 "/posts/" = "/posts/1/"
@@ -124,18 +124,18 @@ each = true
 include-docs = true
 group = {path = "taxonomies.tags", expand = true}
 
-[pages."folders/index.md".query]
-name = "posts"
-index = "folders"
-include-docs = true
-group = {path = "taxonomies.folders", expand = true}
+#[pages."folders/index.md".query]
+#name = "posts"
+#index = "folders"
+#include-docs = true
+#group = {path = "taxonomies.folders", expand = true}
 
-[pages."folders/item.md".query]
-name = "posts"
-index = "folders"
-each = true
-include-docs = true
-group = {path = "taxonomies.folders", expand = true}
+#[pages."folders/item.md".query]
+#name = "posts"
+#index = "folders"
+#each = true
+#include-docs = true
+#group = {path = "taxonomies.folders", expand = true}
 
 [link]
 catalog = "links.md"
