@@ -74,9 +74,6 @@ results = 10
 includes = ["/posts/**"]
 excludes = ["/posts/[0-9]*/"]
 
-#[livereload]
-#notify = false
-
 [minify.html]
 profiles = ["debug", "release"]
 
@@ -95,7 +92,7 @@ key = "taxonomies.tags"
 #[db.load.posts.on.folders]
 #key = "taxonomies.folders"
 
-[redirect]
+[redirects]
 "/posts/" = "/posts/1/"
 
 [pages."index.md".query]
