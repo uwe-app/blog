@@ -53,13 +53,19 @@ checksum = "e45d22b1cd6faffe075c53679dc73daf0394e593478f18b84b69778e36e06d2d"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
-name = "std::core"
-version = "4.1.13"
-checksum = "8df4fc24727a00b4fb47fdf2d5a2a442742afb6f8b6c68fc412103a09f8989b7"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
 name = "std::feed"
 version = "2.0.0"
 checksum = "b3bdc05240636609527de1fd82a1c32740751a66c294ac6637289c925fde96e3"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::blueprint::blog"
+version = "1.0.2"
+checksum = "9d7c2d1f0fa9ff40c90a91af9aa5a674939f25a2cde92ec4cfe1cdc0a1011d0f"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::paginate"
+version = "1.0.1"
+checksum = "9b6b8ee2a6ae4949db813c5b3d6c4f29862ea6cfbfa765d97e667407e4bb1206"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"

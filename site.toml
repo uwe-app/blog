@@ -7,10 +7,15 @@ src = "/assets/scripts/main.js"
 
 [dependencies]
 "std::author" = "^1"
-"std::blueprint::blog" = "^1.0.1"
+"std::blueprint::blog" = "^1.0.2"
 "std::core" = { version = "~4.1.11", apply = {styles = ["**"]} }
 "std::feed" = "^2"
 "std::syntax" = "^1"
+
+# FIXME: remove this as it should be resolved as a transient dependency from `std::blueprint::blog`
+[dependencies."std::paginate"]
+version = "^1"
+apply = { styles = ["**"] }
 
 [dependencies."std::search"]
 #path = "../../plugins/std/search"
@@ -51,6 +56,7 @@ favicon = "/assets/favicon.png"
 target = "posts"
 includes = ["/posts/**"]
 excludes = ["/posts/[0-9]*/", "/posts/"]
+
 [feed.posts.alternate]
 includes = ["/", "/posts/**/*.html"]
 
