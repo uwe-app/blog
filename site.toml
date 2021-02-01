@@ -8,7 +8,7 @@ src = "/assets/scripts/main.js"
 [dependencies]
 "std::author" = "^1"
 "std::blueprint::blog" = "^1.0.2"
-"std::core" = { version = "~4.1.11", apply = {styles = ["**"]} }
+"std::core" = { version = "^5", apply = {styles = ["**"]} }
 "std::feed" = "^2"
 "std::syntax" = "^1"
 
@@ -36,18 +36,15 @@ description = "UWE blog"
 keywords = "News, Insights, Web Editor, Static, Website, Generator, Headless CMS"
 authors = ["tmpfs"]
 
-[build.sitemap]
+#[sitemap]
 #entries = 10
 
-#[build.robots."*"]
+#[robots."*"]
 #allow = ["*"]
 
-#[build.robots."googlebot"]
+#[robots."googlebot"]
 #allow = ["/"]
 #disallow = ["/posts"]
-
-#[feed.templates]
-#atom = "feed/atom.xml"
 
 [feed.posts]
 title = "Blog Posts"

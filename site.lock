@@ -1,61 +1,7 @@
 [[package]]
 name = "std::author"
 version = "1.0.2"
-checksum = "ebe59f0c529a8a21690772ae4cd28b9c386bb3b948a0df10a2a0e7d8b4707293"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::core"
-version = "4.1.12"
-checksum = "927cc884bd2fcbc4cb5b11112ce6fb525359b6738f1ca475dc6baec39ff3199b"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::feed"
-version = "2.0.0"
-checksum = "72ecb3d8b1ca61e47126e8bc0722d03a33d834c120c0e2c0a2e3428e9db96512"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::search"
-version = "1.0.0"
-checksum = "38eb06537059e85f32ebd3303ce6b610681855d337c7f5fb93c9ab3039682b9d"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::syntax"
-version = "1.0.0"
-checksum = "323fcd0611640b1577065c00a89672a16dc541f0920d3e50f289c28e73d66f01"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::author"
-version = "1.0.2"
 checksum = "af817cee4e373c7f89a1350a2e45f0ade38074b4b2caddc710b11b66fd28fc7f"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::search"
-version = "1.0.0"
-checksum = "fa1f4200d8fa3fae1a51ffcfd8ea3f4ca3771f60babe4dc1bcda1bbf71df9bb5"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::blueprint::blog"
-version = "1.0.1"
-checksum = "9693ca2835c3e17f3aad79447b3429fea4668c252315fef27fb22842f814a319"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::syntax"
-version = "1.0.0"
-checksum = "e45d22b1cd6faffe075c53679dc73daf0394e593478f18b84b69778e36e06d2d"
-source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
-
-[[package]]
-name = "std::feed"
-version = "2.0.0"
-checksum = "b3bdc05240636609527de1fd82a1c32740751a66c294ac6637289c925fde96e3"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
@@ -65,7 +11,31 @@ checksum = "9d7c2d1f0fa9ff40c90a91af9aa5a674939f25a2cde92ec4cfe1cdc0a1011d0f"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
+name = "std::core"
+version = "5.0.0"
+checksum = "b2f567c7e721c375078dbba3aa0499a29cfd0425979533655e9268c697c6089d"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::feed"
+version = "2.0.0"
+checksum = "b3bdc05240636609527de1fd82a1c32740751a66c294ac6637289c925fde96e3"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
 name = "std::paginate"
 version = "1.0.1"
 checksum = "9b6b8ee2a6ae4949db813c5b3d6c4f29862ea6cfbfa765d97e667407e4bb1206"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::search"
+version = "1.0.0"
+checksum = "fa1f4200d8fa3fae1a51ffcfd8ea3f4ca3771f60babe4dc1bcda1bbf71df9bb5"
+source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "std::syntax"
+version = "1.0.1"
+checksum = "ce53850cef8e9d99480fe3f3ac2a9899ccdc9a5ca8ce73f36d3e41cfefe9554a"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
