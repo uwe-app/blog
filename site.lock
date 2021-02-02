@@ -6,8 +6,8 @@ source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
 name = "std::blueprint::blog"
-version = "1.0.2"
-checksum = "9d7c2d1f0fa9ff40c90a91af9aa5a674939f25a2cde92ec4cfe1cdc0a1011d0f"
+version = "1.0.4"
+checksum = "0ad3b17567b64fc53e66f17b245b687b10e5584ac83c94f45d51b050d3f5eb46"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
