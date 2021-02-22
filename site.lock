@@ -6,8 +6,8 @@ source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
 name = "std::blueprint::blog"
-version = "1.0.5"
-checksum = "2b6da9a4af374438adfce83cb8a4de337f69603674bce5bc8af923be6cfabf91"
+version = "1.0.7"
+checksum = "a81428c96f18f7299d102fd9b06ad0dfa66014d647018acf969f31ee183d0ced"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
@@ -18,8 +18,8 @@ source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
 name = "std::core"
-version = "5.0.0"
-checksum = "b2f567c7e721c375078dbba3aa0499a29cfd0425979533655e9268c697c6089d"
+version = "5.0.5"
+checksum = "878f8cd4f1426e061d136ef865ecd0b9a2fccdedf48f0c7edcfa94b8025b345c"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
 
 [[package]]
