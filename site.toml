@@ -8,12 +8,12 @@ src = "/assets/scripts/main.js"
 [dependencies]
 "std::author" = "^1"
 "std::blueprint::blog" = "^1.0.5"
-"std::core" = { version = "^5", apply = {styles = ["**"]} }
+"std::core" = "^5"
 "std::feed" = "^2"
 "std::syntax" = "^1"
 
-"uwe::brand::main" = { version = "^1", apply = { styles = [ "**" ] }, path = "../../brand/main" }
-"uwe::brand::syntax" = { version = "^1", apply = { styles = [ "**" ] }, path = "../../brand/syntax" }
+#"uwe::brand::main" = { version = "^1", apply = { styles = [ "**" ] }, path = "../../brand/main" }
+#"uwe::brand::syntax" = { version = "^1", apply = { styles = [ "**" ] }, path = "../../brand/syntax" }
 
 [dependencies."std::search"]
 #path = "../../plugins/std/search"
