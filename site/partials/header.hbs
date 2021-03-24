@@ -1,9 +1,12 @@
 <header>
-  <h1><a href="{{ link "/" }}">UWE Blog</a></h1>
   <nav>
-      <a href="{{ link "/posts/" }}">Posts</a>
-      <a href="{{ link "/tags/" }}">Tags</a>
+    <a href="{{link "/"}}" class="home">
+      <img alt="Logo" src="{{link "/assets/svg/header-logotype.svg"}}" />
+    </a>
+    [[/posts/|Posts]]
+    [[/tags/|Tags]]
   </nav>
+
   {{!-- <a href="#search"><img src="/assets/ic_search.svg" alt="Search toggle" /></a> --}}
   {{search id="posts" placeholder="Enter keywords, eg: minify" class="search-wrapper hidden"}}
 </header>

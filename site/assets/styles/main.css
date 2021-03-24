@@ -1,64 +1,52 @@
-@import url("./theme.css");
-@import url("./fonts.css");
-
 :root {
-  --default-font: "Merriweather", serif;
-  --mono-font: Monaco, Menlo, Consolas, Courier New, monospace;
-  --rhythm: 1.8rem;
   --std-max-width: none;
 }
 
-html {
-  box-sizing: border-box;
+main header {
+  /*margin: 0;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--std-background);
+  filter: drop-shadow(0px 1px 0px var(--uwe-header-shadow-color));
+  height: var(--uwe-header-height);
+  position: sticky;
+  z-index: 100;
+  top: 0;
 }
 
-*, *:after, *:before {
-  box-sizing: inherit;
+main > header > nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%;
-  font-family: var(--default-font);
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  text-rendering: optimizeLegibility;
+main > header > nav > a {
+  margin-right: var(--uwe-gutter-large) !important;
 }
 
-
-body {
-  font-size: 1.8rem;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  padding: 2rem 2rem;
-  line-height: 1.8;
+main > header > nav > .home {
+  width: 90px;
+  height: 30px;
 }
 
-p {
-  line-height: 1.6;
+main > header > nav > a {
+  font-family: var(--std-font-headings);
+  color: var(--std-color);
 }
 
-h1, h2, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  font-size: 3.5rem;
-  font-weight: normal;
-  line-height: 1.6;
+main > header a {
+  text-decoration: none;
+}
+
+article p {
+  max-width: 760px;
 }
 
 h3 {
-  font-weight: normal;
-  line-height: 1.6;
-  font-size: 2.5rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-  margin-top: 40px;
-}
-
-h4, h5, h6 {
-  font-size: 1.8rem;
+  border-bottom: 1px solid var(--uwe-header-shadow-color);
 }
 
 h2 + p {
@@ -74,6 +62,7 @@ li h4 + p + small {
   margin-bottom: var(--rhythm);
 }
 
+/*
 header h1,
 header h1 a {
   color: inherit;
@@ -81,6 +70,7 @@ header h1 a {
   font-size: 1.4rem;
   vertical-align: top;
 }
+*/
 
 header {
   margin-bottom: 3rem;
@@ -94,10 +84,7 @@ header > nav > :not(:last-child) {
   margin-right: 1rem;
 }
 
-/*main {*/
-  /*max-width: none;*/
-/*}*/
-
+/*
 :not(pre) code {
   padding: 2px 5px;
   font-size: 1.5rem;
@@ -118,10 +105,13 @@ pre > code {
 pre, code {
   font-family: var(--mono-font);
 }
+*/
 
+  /*
 a {
   color: inherit;
 }
+*/
 
 ul {
   list-style-type: none;
@@ -134,17 +124,6 @@ ul, li {
 
 li > a:first-child + p {
   margin-top: 0;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  margin: 3rem 0;
-  background: #eee;
-}
-
-.rhythm {
-  margin-bottom: var(--rhythm);
 }
 
 ul.tags, ul.tags li {

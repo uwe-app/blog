@@ -39,3 +39,13 @@ name = "std::syntax"
 version = "1.0.1"
 checksum = "ce53850cef8e9d99480fe3f3ac2a9899ccdc9a5ca8ce73f36d3e41cfefe9554a"
 source = "https://s3-ap-southeast-1.amazonaws.com/registry.uwe.app"
+
+[[package]]
+name = "uwe::brand::main"
+version = "1.0.0"
+source = "file:///home/muji/git/uwe/brand/main"
+
+[[package]]
+name = "uwe::brand::syntax"
+version = "1.0.0"
+source = "file:///home/muji/git/uwe/brand/syntax"
