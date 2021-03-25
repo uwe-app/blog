@@ -34,6 +34,7 @@ main > header > nav > .home {
 
 main > header > nav > a {
   font-family: var(--std-font-headings);
+  font-style: italic;
   color: var(--std-color);
 }
 
