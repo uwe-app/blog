@@ -12,8 +12,8 @@ src = "/assets/scripts/main.js"
 "std::feed" = "^2"
 "std::syntax" = "^1"
 
-#"uwe::brand::main" = { version = "^1", apply = { styles = [ "**" ] }, path = "../../brand/main" }
-#"uwe::brand::syntax" = { version = "^1", apply = { styles = [ "**" ] }, path = "../../brand/syntax" }
+"uwe::brand::main" = { version = "^1", apply = { styles = [ "**" ] }, path = "../../brand/main" }
+"uwe::brand::syntax" = { version = "^1", apply = { styles = [ "**" ] }, path = "../../brand/syntax" }
 
 [dependencies."std::search"]
 #path = "../../plugins/std/search"

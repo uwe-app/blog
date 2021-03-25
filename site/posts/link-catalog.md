@@ -1,6 +1,6 @@
 +++
 created = 2020-07-11
-description = "All your link belong to us"
+description = "All your link are belong to us"
 
 [taxonomies]
 tags = ["Link", "Markdown"]
