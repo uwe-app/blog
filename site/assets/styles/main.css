@@ -10,11 +10,6 @@ li h4 + p {
   margin: 0;
 }
 
-li h4 + p + small {
-  display: block;
-  margin-bottom: var(--rhythm);
-}
-
 ul {
   list-style-type: none;
 }
