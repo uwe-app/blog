@@ -30,7 +30,7 @@ extend = ["html"]
 #parallel = false
 
 [page]
-description = "UWE blog"
+description = "Articles and news from the UWE team"
 keywords = "News, Insights, Web Editor, Static, Website, Generator, Headless CMS"
 authors = ["tmpfs"]
 
